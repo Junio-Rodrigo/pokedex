@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+}
+
+.forMoreView {
+    display: flex;
+    align-items: end;
+
+}
+button > img {
+    height: 25px;
+    width: 25px;
+}
+.searchInput {
+    margin-top: 40px;
+    border: solid 3px #444;
+    border-radius: 10px;
+    width: 30vw;
+    height: 50px;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggleMode {
+    margin: 10px;
+    position: absolute;
+    color: #fff;
+    align-self: end;
+}
+select:hover {
+    border-color: #888;
+}
+
+select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.searchButton {
+    box-shadow: #000;
+    margin: 40px 0 0 10px;
+    padding: 2px 10px;
+    border: solid 1px #000;
+    border-radius: 10px;
+}
+.searchButton:hover {
+    background-color: #ccc;
+}
+.pokemons {
+    padding: 0 16px;
+    justify-content: center;
+    gap: 16px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.copyPokemon {
+    display: flex;
+    justify-content: end;
+    background-color: #222;
+    border-radius: 20px;
+    width: calc(100% / 3 - 16px);
+
+}
+.pokemonDiv {
+    display: flex;
+    justify-content: end;
+    background-color: #222;
+    border-radius: 20px;
+    width: calc(100% / 3 - 16px);
+}
+.title {
+    margin-left: 50px;
+    font-size: 70px;
+    color: #fff;
+    font-family: monospace;
+}
+
+.name {
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0 40px 10px 0;
+}
+
+.name::first-letter {
+    text-transform: uppercase;
+}
+
+.name:hover {
+    color: #999;
+}
+
+.informations {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+}
+
+.type {
+    margin-bottom: 10px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 4px 10px;
+}
+
+.sprite {
+    width: 13vw;
+    height: 13vw;
+}
+
+.name {
+    font-size: 3vw;
+}
+.type {
+    font-size: 2vw;
+}
+
+.fire {
+    background-color: #f40;
+}
+.water {
+    background-color: #04f;
+}
+.bug {
+    background-color: #0a0;
+}
+.flying {
+    background-color: #aaa;
+}
+.rock {
+    background-color: #620;
+}
+.poison {
+    background-color: #70f;
+}
+.ground {
+    background-color: #950;
+}
+.grass {
+    background-color: #0f0;
+}
+.fighting {
+    background-color: #f90;
+}
+.psychic {
+    background-color: #f0f;
+}
+.normal {
+    background-color: #856;
+}
+.fairy {
+    background-color: #f08;
+}
+.electric {
+    background-color: #fb0;
+}
+.ice {
+    background-color: #0aa;
+}
+.steel {
+    background-color: #56555c;
+}
+.ghost {
+    background-color: darkslateblue;
+}
+.dark {
+    background-color: #3d1b43;
+}
+.dragon {
+    background-color: #07f;
+}
+
+.favorite {
+    align-self: end;
+    position: absolute;
+    cursor: pointer;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #fff;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+
+.forMore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 64px 0;
+}
+
+.viewMore {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 12px;
+    border: solid 3px #fff;
+    padding: 3px 30px;
+    background-color: #121212;
+}
+
+.viewMore:hover {
+    transition: .5s;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Abaixo é o css da segunda página --------------------------------------------------------------------------------------------------------------------*/
+.pokemon {
+    color: #fff;
+    font-family: monospace;
+    align-self: center;
+    font-size: 5vw;
+}
+
+.pokemon::first-letter {
+    text-transform: uppercase;
+}
+
+.forPokemon {
+    font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pokemonInformations {
+    display: flex;
+    color: #fff;
+    font-family: monospace;
+    align-self: center;
+}
+.divFlex {
+    display: flex;
+    justify-content: center;
+}
+.typePokemon {
+    margin: 10px 30px 0 0;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: inherit;
+}
+.stats {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+}
+.abilities {
+    color: #fff;
+    margin-right: 10px;
+    font-family: monospace;
+    font-size: 2vw;
+}
+.infos > h1 {
+    padding: 4px 200px;
+    background-color: #222;
+    border-radius: 40px;
+    margin-top: 40px;
+    font-family: monospace;
+    color: #fff;
+    font-size: 50px;
+}
+.atrr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    font-size: 2vw;
+}
+
+.infos {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pokemonImg {
+    width: 90%;
+    height: 90%;
+}
+
+.back {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 100%;
+    border: none;
+    position: fixed;
+    width: 50px;
+    height: 60px;
+    background-color: #fff;
+}
+.arrow {
+    width: 1%;
+    height: 1%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #000;
+    margin: 20px;
+}
+
+.back:hover {
+    background-color: #999;
+}
+.titleFavorite {
+    display: none;
+    margin-left: 50px;
+    font-size: 70px;
+    color: #fff;
+    font-family: monospace;
+}
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 20px;
+}
+#text {
+    font-size: 4vw;
+    padding: 0 8vw 0 8vw;
+}
+
+.pokemonBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Códigos abaixo é para deixar o site responsivo */
+
+/* Primeira página */
+@media (max-width: 1200px) {
+    .pokemons {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .pokemonDiv {
+        width: 50%;
+        height: 50%;
+    }
+    .sprite {
+        width: 25vw;
+        height: 25vw;
+    }
+    .favorite {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+/* Segunda página */
+@media (max-width: 800px) {
+    .divFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .pokemon {
+        font-size: 10vw;
+    }
+    .pokemonBody {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        font-size: 25px;
+    }
+    .abilities, .atrr, .typePokemon, .text{
+        font-size: 5vw; 
+    }
+
+}
