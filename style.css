@@ -58,10 +58,8 @@ select:focus {
     background-color: #ccc;
 }
 .pokemons {
-    padding: 0 16px;
     justify-content: center;
     gap: 16px;
-    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -189,6 +187,7 @@ select:focus {
     align-self: end;
     position: absolute;
     cursor: pointer;
+    margin: 5px;
     width: 2.5vw;
     height: 2.5vw;
     background-color: #fff;
@@ -358,22 +357,40 @@ select:focus {
 
 /* Primeira página */
 @media (max-width: 1200px) {
+    #toggleMode {
+        font-size: 2.5vw;
+        width: 15vw;
+    }
     .pokemons {
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
     }
     .pokemonDiv {
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
     }
     .sprite {
-        width: 25vw;
-        height: 25vw;
+        width: 30vw;
+        height: 30vw;
     }
     .favorite {
         width: 5vw;
         height: 5vw;
+    }
+    .name {
+        font-size: 5vw;
+    }
+    .favorites {
+        
+        justify-content: center;
+    }
+    .title, .titleFavorite {
+        font-size: 10vw;
+    }
+    .copyPokemon {
+        width: 70%;
+        height: 70%;
     }
 }
 
